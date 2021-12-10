@@ -1,0 +1,49 @@
+/* 全ページ共通のCSS */
+
+/* ----------------------- 
+
+Color
+
+-----------------------*/
+
+.text_color {
+    color: #2F2F2F;
+}
+
+.subText_color {
+    color: #9F9F9F;
+}
+
+.main_color {
+    color: #FCD8DA;
+}
+
+.accent_color {
+    color: #CCD2FC;
+}
+
+/* ----------------------- 
+
+Typography
+
+-----------------------*/
+
+.h1 {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+
+.h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text {
+    line-height: 1.7;
+}

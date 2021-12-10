@@ -1,0 +1,95 @@
+/* index.html固有のCSS */
+
+.sec1 {
+    /* 横並び */
+    display: flex;
+    /* いいかんじに空ける */
+    justify-content: space-around;
+    /* paddingをつける */
+    padding: 100px 0;
+}
+
+.sec1__title {
+    position: relative;
+    top: 120px;
+    /* 下線を引く */
+    border-bottom: 4px solid pink;
+    /* 文字の大きさに合わせて箱の大きさをギュッとする（下線がくっつくように） */
+    height: fit-content;
+}
+
+.sec2 {
+    background-color: rgb(243, 243, 243);
+    /* 章（section）の切り替わりは100px以上あけると良い */
+    padding: 100px 32px;
+}
+
+.feature {
+    display: flex;
+}
+
+.feature__element {
+    /* cssはcalcで計算ができる！33％-16pxは、画面を3つに分けてそれぞれの余白を16pxとるということ。マイナスの両隣にはスペースを空ける */
+    width: calc(33% - 16px);
+    padding: 0 8px;
+}
+
+.feature__image {
+    text-align: center;
+}
+
+.feature__title {
+    text-align: center;
+    margin: 14px 0;
+}
+
+.feature__explain {
+    line-height: 1.7;
+}
+
+
+/*--------- ここからsection3 ---------*/
+
+.sec3 {
+    padding: 100px 32px;
+}
+
+.sec3__title {
+    margin-bottom: 28px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; これがついてると、カードがきれいに並ばない*/
+}
+
+.card {
+    border-radius: 16px;
+    border: 1px solid lightgray;
+    /* cssはcalcで計算ができる！33％-16pxは、画面を3つに分けてそれぞれの余白を16pxとるということ。マイナスの両隣にはスペースを空ける */
+    width: calc(33% - 16px);
+    margin: 14px 8px;
+
+}
+
+.card__image {
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+    /* 画像の比率を保つ。スラッシュの両隣にはスペースを空ける */
+    aspect-ratio: 16 / 9;
+    /* 画像が引き伸ばされたりしなくなる */
+    object-fit: cover;
+}
+
+.card__content {
+    padding: 14px 16px;
+}
+
+.card__title {
+    margin-bottom: 14px;
+}
+
+.card__explain {
+    line-height: 1.7;
+}

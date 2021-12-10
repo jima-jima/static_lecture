@@ -1,0 +1,40 @@
+/* base.cssは複数のページで使うパーツのCSS */
+
+/* ----------------------------------------------------
+header css書くときにこういう風にタイトル書くとわかりやすい
+----------------------------------------------------- */
+
+.header {
+    /* 高さ100 */
+    height: 100px;
+    /* 影をつける */
+    box-shadow: 0px 3px 6px lightgrey;
+    /* タイトルとメニューは横並び */
+    display: flex;
+    /* スパーンと分かれてる */
+    justify-content: space-between;
+    /* 縦位置中央 */
+    align-items: center;
+    /* paddingをつける */
+    padding: 0 32px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav__element {
+    margin: 0 16px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.container {
+    /* 最大の幅を指定しておく */
+    max-width: 1280px;
+    /* 最大幅以上の幅になったら勝手に余白がつくようにしておくと良い */
+    margin: auto;
+}
